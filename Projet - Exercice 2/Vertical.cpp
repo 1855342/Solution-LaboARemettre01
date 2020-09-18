@@ -1,4 +1,4 @@
-//But : Afficher un nombre à 5 et séparer verticalement les 5 chiffres
+//But : Afficher un nombre Ã  5 et sÃ©parer verticalement les 5 chiffres
 //Auteur : Charles St-Vincent
 //Date : 13/09/20
 
@@ -6,17 +6,18 @@
 using namespace std;
 void main()
 {
- // Déclaration de la variable
+ // DÃ©claration de la variable
     int nombre5Chiffres;
     
- //   Message invitant l'opérateur d'entree un nombre entier de 5 chiffres
+ //   Message invitant l'opÃ©rateur d'entree un nombre entier de 5 chiffres
     cout << "Veuillez entrer un nombre entier de 5 chiffres. " << endl;
     cout << "Nombre : ";
     
- // Le nombre va être enregistré dans le programme 
+ // Le nombre va Ãªtre enregistrÃ© dans le programme 
     cin >> nombre5Chiffres;
    
- // Le programme s'assure qu'il sagit d'un nombre à 5 chiffres. Si le nombre ne contient pas 5 chiffres il va le redemander et enlever les anciens essaies. 
+ // Le programme s'assure qu'il sagit d'un nombre Ã  5 chiffres. Si le nombre ne contient pas 5 chiffres il va le redemander et enlever les anciens essaies. 
+ // KM : Attention d'utiliser juste les notions vues en classe
     while (nombre5Chiffres < 9999 || nombre5Chiffres > 99999)
     {
         
@@ -26,7 +27,8 @@ void main()
         cin >> nombre5Chiffres;
     }
 
-    // Le programme sépare chacun des chiffres et recommence une ligne à chaque chiffre.
+    // Le programme sÃ©pare chacun des chiffres et recommence une ligne Ã  chaque chiffre.
+ // KM : Il faut expliquer le raisonnement du calcul
     cout << nombre5Chiffres % 100000 / 10000 << endl;
     cout << nombre5Chiffres % 10000 / 1000 << endl;
     cout << nombre5Chiffres % 1000 / 100 << endl;
@@ -37,14 +39,14 @@ void main()
 
 //Plan de test
 /*
-nombre à 5 chiffres             Résultat
+nombre Ã  5 chiffres             RÃ©sultat
 45623                           4
                                 5
                                 6
                                 2
                                 3
 
-7526                            Le programme demande de reentrée le nombre
+7526                            Le programme demande de reentrÃ©e le nombre
                                 
 
 
