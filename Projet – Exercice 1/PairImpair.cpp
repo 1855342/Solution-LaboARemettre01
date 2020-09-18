@@ -1,4 +1,4 @@
-//But : Écrire un programme qui lit un netier et qui détermine et affiche s'il s'agit d'un entier pair ou d'un entier impair
+//FR : But : Ã‰crire un programme qui lit un netier et qui dÃ©termine et affiche s'il s'agit d'un entier pair ou d'un entier impair
 //Auteur : Charles St-Vincent	
 //Date : 13/09/20
 
@@ -6,26 +6,27 @@
 using namespace std;
 void main()
 {
-	// Déclaration de la variable
+	// DÃ©claration de la variable
 	int reponseOperateur;
 
-	// Message à inviter l'opérateur d'entrée un nombre entier
+	// FR : Message Ã  inviter l'opÃ©rateur d'entrÃ©e un nombre entier
 	cout << "Veuillez entrez un nombre entier. " << endl;
 	cout << " Nombre entier : ";
 	
-	// Le nombre entré par l'opérateur vas être enregistrer dans le programme
+	// FR : Le nombre entrÃ© par l'opÃ©rateur vas Ãªtre enregistrer dans le programme
 	cin >> reponseOperateur;
 	cout << endl;
 	
 	//Le programme divise par 2 le nombre entier 
 	
-	if (reponseOperateur % 2 == 1)		/* Si le chiffre est impaire ce message ci dessous va être afficher */
+	// KM : Attention Ã  comparer avec 1, si le nombre est nÃ©gatif le rÃ©sultat sera -1 !!!
+	if (reponseOperateur % 2 == 1)		/* FR : Si le chiffre est impaire ce message ci dessous va Ãªtre afficher */
 	{
 		cout << " Le nombre que vous avez entre est impaire" << endl;
 
 	}
 
-	else								/* Si le chiffre est paire ce message ci dessous va être afficher */
+	else								/* Si le chiffre est paire ce message ci dessous va Ãªtre afficher */
 	{
 		cout << "le nombre que vous avez entre est pair" << endl;
 	}
@@ -38,6 +39,7 @@ void main()
 //Plan de test
 /*
 Nombre entre			pair ou impaire
+// KM : Tu as testÃ© les nombres nÃ©gatifs ??? et 0
 
 5						impaire
 4						pair
